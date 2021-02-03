@@ -1,7 +1,7 @@
 CONTENTS OF THIS FILE
 ---------------------
 
- * Introduction
+ * Introduction1
  * Requirements
  * Recommended modules
  * Installation
