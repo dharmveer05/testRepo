@@ -8,7 +8,7 @@ import CustomLoader from '../customLoader';
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated';
 import {text} from 'react-text';
-
+w
 
 const animatedComponents = makeAnimated();
 
