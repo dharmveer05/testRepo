@@ -9,7 +9,7 @@ import Select from 'react-select'
 import makeAnimated from 'react-select/animated';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import 'test' from 'react/test';
+import 'test1' from 'react/test1';
 const animatedComponents = makeAnimated();
 
 
