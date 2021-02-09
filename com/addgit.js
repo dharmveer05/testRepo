@@ -10,7 +10,7 @@ import makeAnimated from 'react-select/animated';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import test11 from 'react/test11';
-const animatedComponents = makeAnimated();
+const animatedComponents1= makeAnimated();
 
 
 
