@@ -7,7 +7,7 @@ import * as moment from 'moment'
 import CustomLoader from '../customLoader';
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated';
-import {text1199} from 'react-text111';
+import {text1179} from 'react-text111';
 
 
 const animatedComponents = makeAnimated();
