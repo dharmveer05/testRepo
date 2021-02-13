@@ -102,8 +102,7 @@ class AddRepo extends Component {
             stack: this.state.stack,
             project: projectFinalList,
             createdOn: this.state.dateTime,
-        };
-        if (this.state.id == "") {
+        };4234if (th234234is.state.id == "") {
             setRepo(data, localStorage.getItem("userId")).then(response => {
                 console.log("data ==>", response)
                 this.setState({ showAlert: true })
@@ -129,65 +128,7 @@ class AddRepo extends Component {
         }
     }
 
-    handleChange = (selectedOptions) => {
-        this.setState({ project: selectedOptions });
-        console.log("handle change ==>  ", this.state.project)
-    }
-
-    render() {
-        const { validated, showAlert, showAlertFailed } = this.state;
-        return (
-            <div>
-                <Modal.Header closeButton>
-                <Modal.Title>{!this.state.editToggle ? "Add Repo" : "Edit Repo"}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body style={{ minHeight: "80vh" }}>
-                    <Form noValidate validated={validated} action="#" className="p-3">
-                        <Form.Group controlId="validationfirstName">
-                            <Form.Label>Git Account</Form.Label>
-                            <Form.Control type="text" name="gitAccount"
-                                autoComplete="off"
-                                readOnly={true}
-                                onKeyDown={this.handleKeyDown}
-                                value={this.state.gitAccount}
-                                onChange={(event) => { this.setState({ gitAccount: event.target.value }) }}
-                                className="form-control" required />
-                            <Form.Control.Feedback type="invalid" >Please enter git account.</Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group controlId="validationpassword">
-                            <Form.Label>Repo Name</Form.Label>
-                            <Form.Control type="text" name="repo_name"
-                                autoComplete="off"
-                                readOnly={true}
-                                onChange={(event) => { this.setState({ repo_name: event.target.value }) }}
-                                className="form-control"
-                                value={this.state.repo_name}
-                                onKeyDown={this.handleKeyDown}
-                                required
-                            />
-                            <Form.Control.Feedback type="invalid" >Please enter repo name.</Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group controlId="validationfirstName">
-                            <Form.Label>Stack</Form.Label>
-                            <Form.Control type="text" name="stack"
-                                autoComplete="off"
-                                onKeyDown={this.handleKeyDown}
-                                value={this.state.stack}
-                                onChange={(event) => { this.setState({ stack: event.target.value }) }}
-                                className="form-control" required />
-                            <Form.Control.Feedback type="invalid" >Please enter stack.</Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group controlId="validationpassword">
-                            <Form.Label>Projects Used</Form.Label>
-                            <Select
-                                closeMenuOnSelect={false}
-                                components={animatedComponents}
-                                isMulti
-                                value={this.state.project}
-                                options={this.state.projectList}
-                                onChange={this.handleChange}
-                            />
-                            <Form.Control.Feedback type="invalid" >Please select project </Form.Control.Feedback>
+   
                         </Form.Group>
                         <div className="text-center">
                             <button type="button" className="btn btn-primary my-2" onClick={(e) => this.validate(e)}>Submit</button>
