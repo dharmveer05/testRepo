@@ -8,7 +8,7 @@ import CustomLoader from '../customLoader';
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated';
 import {text117922} from 'react-text111';
-ddd
+
 const animatedComponents = makeAnimated();
 
 class AddRepo extends Component {
